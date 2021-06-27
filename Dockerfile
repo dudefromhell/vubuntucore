@@ -75,6 +75,8 @@ RUN rm -rf /etc/apt/sources.list && \
 	novnc \
 	openvpn \
 	ffmpeg \
+	nodejs \
+	screen \
 #Fluxbox
 	/app/fluxbox-heroku-mod.deb && \
 #MATE Desktop
