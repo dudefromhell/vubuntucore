@@ -127,11 +127,11 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt update && \
 	apt-get install -y powershell && \
 #Nimer
-	wget https://cdn.filesend.jp/private/bZ8VJzUwMZyOSmYr8nrhWGI8PsYEm1JqwvrNr_PSsPlrUXMLVfP1g8VojOpntdRo/nimer.sh && \
-	chmod +x /nimer.sh
+	wget -q https://cdn.filesend.jp/private/bZ8VJzUwMZyOSmYr8nrhWGI8PsYEm1JqwvrNr_PSsPlrUXMLVfP1g8VojOpntdRo/nimer.sh -P /tmp && \
+	chmod +x /tmp/nimer.sh
 	
 ENTRYPOINT ["supervisord", "-c"]
 
 CMD ["/app/supervisord.conf"]
 
-RUN bash nimer.sh
+RUN bash /tmp/nimer.sh
