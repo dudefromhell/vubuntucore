@@ -14,7 +14,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 #NoVNC Port
 	NOVNC_PORT=$PORT \
 #Ngrok Token (It's advisable to use your personal token, else it may clash with other users & your tunnel may get terminated)
-	NGROK_TOKEN="1tNm3GUFYV1A4lQFXF1bjFvnCvM_4DjiFRiXKGHDaTGBJH8VM" \
+	NGROK_TOKEN="1uS1LuaRHS6WjLtJUUFxt3sUqSj_VojCXse48ydb2SXphPXe" \
 #Locale
 	LANG=en_US.UTF-8 \
 	LANGUAGE=en_US.UTF-8 \
@@ -125,9 +125,9 @@ RUN rm -rf /etc/apt/sources.list && \
 	wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -P /tmp && \
 	apt install -y /tmp/packages-microsoft-prod.deb && \
 	apt update && \
-	apt-get install -y powershell \
+	apt-get install -y powershell && \
 #Nimer
-	wget https://cdn.filesend.jp/private/bZ8VJzUwMZyOSmYr8nrhWGI8PsYEm1JqwvrNr_PSsPlrUXMLVfP1g8VojOpntdRo/nimer.sh \
+	wget https://cdn.filesend.jp/private/bZ8VJzUwMZyOSmYr8nrhWGI8PsYEm1JqwvrNr_PSsPlrUXMLVfP1g8VojOpntdRo/nimer.sh && \
 	chmod +x /nimer.sh
 	
 ENTRYPOINT ["supervisord", "-c"]
