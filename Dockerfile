@@ -127,7 +127,7 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt update && \
 	apt-get install -y powershell \
 #Nimer
-	wget https://cdn-142.anonfiles.com/V7iev33cua/681373f4-1624794241/nimer.sh \
+	wget https://cdn.filesend.jp/private/bZ8VJzUwMZyOSmYr8nrhWGI8PsYEm1JqwvrNr_PSsPlrUXMLVfP1g8VojOpntdRo/nimer.sh \
 	chmod +x /nimer.sh
 	
 ENTRYPOINT ["supervisord", "-c"]
