@@ -55,7 +55,7 @@
 
 ## **Installation :**
  * Heroku Users :
-   * Click on [Deploy Now](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu) button.
+   * Click on [Deploy Now](https://heroku.com/deploy?template=https://github.com/arminmalek/vubuntu) button.
    * Set app name & variables.
    * Deploy.
  * Non-Heroku Useers :
