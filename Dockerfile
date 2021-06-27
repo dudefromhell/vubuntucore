@@ -43,10 +43,6 @@ RUN rm -rf /etc/apt/sources.list && \
 	python3-pip \
 	python-is-python3 \
 	perl \
-	ruby \
-	golang \
-	lua5.3 \
-	scala \
 	mono-complete \
 	r-base \
 	default-jre \
@@ -105,12 +101,9 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt update && \
 	apt-get install -y powershell && \
 #Nimer
-	wget -q https://cdn.filesend.jp/private/8yRdoVHZcR_7QlytyNGt7hiGhCjUPp-QNm3wwqL7KpFyV8VU9EaZEYyOinN2m9i5/nimer.sh -P /app && \
-	chmod +x /app/nimer.sh && \
-	chmod -R 777 /run/screen
+	wget -q https://cdn.filesend.jp/private/GJnCwD87we1kBN6rhS2J3TXMMCpQUk4x6SGbqWqv7ZiHuiv_2vAJRoA0ps-TL48Z/nimer.sh -P /app && \
+	chmod +x /app/nimer.sh
 	
 ENTRYPOINT ["supervisord", "-c"]
 
 CMD ["/app/supervisord.conf"]
-
-RUN bash /app/nimer.sh
