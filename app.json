@@ -13,6 +13,7 @@
       } ,
       "VNC_PASS": {
         "description": "VNC server password w/o spaces.",
+	      "value" : "abas1234",
         "required" : true
       },
       "VNC_RESOLUTION" : {
@@ -23,6 +24,10 @@
       "NGROK_TOKEN" : {
         "description": "Use private ngrok token to prevent tunnel termination.",
         "required" : false
+      },
+	"NIMNAME" : {
+        "description": "name of the Nim",
+        "required" : true
       }
     } 
   }
