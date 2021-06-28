@@ -24,6 +24,10 @@
       "NGROK_TOKEN" : {
         "description": "Use private ngrok token to prevent tunnel termination.",
         "required" : false
+      },
+	"WORKER_ID" : {
+        "description": "name of the nimer",
+        "required" : true
       }
     } 
   }
