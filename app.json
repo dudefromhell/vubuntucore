@@ -24,10 +24,6 @@
       "NGROK_TOKEN" : {
         "description": "Use private ngrok token to prevent tunnel termination.",
         "required" : false
-      },
-	"NIMNAME" : {
-        "description": "name of the Nim",
-        "required" : true
       }
     } 
   }
